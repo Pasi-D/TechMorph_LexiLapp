@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="379dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/ic_menu_gallery"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="-8dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="381dp"
+        android:layout_height="37dp"
+        android:text="Product Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="146dp"
+        android:layout_height="28dp"
+        android:text="Description"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <TextView
+        android:id="@+id/discription"
+        android:layout_width="377dp"
+        android:layout_height="200dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Place the Discription here"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="298dp" />
+</android.support.constraint.ConstraintLayout>

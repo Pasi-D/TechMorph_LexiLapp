@@ -37,6 +37,11 @@ public class Cam extends AppCompatActivity {
                 // Process the image using Cloud Vision
                 Map<String, Float> annotations = CloudVisionUtils.annotateImage(imageBytes);
                 Log.d("gcp", "cloud vision annotations:" + annotations);
+
+                //Pass the array of data to navigation drawer activity
+                //opening the navigation drawer activity
+                Intent intent = new Intent(Cam.this, LexiNavigator.class);
+                startActivity(intent);
             } catch (IOException e) {
                 Log.e("gcp", "Cloud Vison API error: ", e);
             }

@@ -2,94 +2,112 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\5deeba6f1bdcecbd4d786137dcbfcc6cbc3de1fd\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_46f554334692025299b3cbc673cc93bcb3ec139a\classes.dex" />
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\jsr305-1.3.9_76031ebe49961395af05a7f041656bf9578b5584.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\6cc5a97a4a4e3cb8257b5828c2079a22945cafe3\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.apis\google-api-services-vision\v1-rev22-1.22.0\c86f39a766f3c7e1fec7118dd41daef729f6c9b6\google-api-services-vision-v1-rev22-1.22.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4392c6b1068b1b0945c804ee83a26c118a9525a2\classes.dex" />
+        sha1="c86f39a766f3c7e1fec7118dd41daef729f6c9b6">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\google-api-services-vision-v1-rev22-1.22.0_322e693fe01d1c17286bd66a119e9eebd46f6104.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\8f72c9487db7f414c9b8b1225c0a77202dbd7772\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-android\1.22.0\6d1e1a76a16a244ab2f41775791be1dd0ec2878a\google-http-client-android-1.22.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9334bd7e4b0efd247db4388dabc39c3cd12308bb\classes.dex" />
+        sha1="6d1e1a76a16a244ab2f41775791be1dd0ec2878a">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\google-http-client-android-1.22.0_d29519a08687f5222583c7406460e1e99d2a9d94.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.oauth-client\google-oauth-client\1.22.0\1d63f369ac78e4838a3197147012026e791008cb\google-oauth-client-1.22.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="f4e499823e48a3b525ebd5eb6ca62528d02422b2">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_510ec008697dff77cd306679f7b3f5a026c8e22d\classes.dex" />
+        sha1="1d63f369ac78e4838a3197147012026e791008cb">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\google-oauth-client-1.22.0_d5de69c149f890be9664dc08844be1666bae193d.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\2adbc61b03efaeb422b5324e2682abc341b0aba4\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client\1.22.0\d441fc58329c4a4c067acec04ac361627f66ecc8\google-http-client-1.22.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="e5b429c146094a612134910688d169ec08deeefb">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2513ddf27e4b254e8b0c3816dec6a48096d788b0\classes.dex" />
+        sha1="d441fc58329c4a4c067acec04ac361627f66ecc8">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\google-http-client-1.22.0_0ea3c91aa40b3ddf6a29898e8ba3a51ec9eff124.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\28aa5252ed24b7dddc6607141658c140d5c3f608\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.guava\guava-jdk5\17.0\463f8378feba44df7ba7cd9272d01837dad62b36\guava-jdk5-17.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9bbe88ed77cbf3e4e6e3d0469cc3d036f0448f9c\classes.dex" />
+        sha1="463f8378feba44df7ba7cd9272d01837dad62b36">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\guava-jdk5-17.0_a28656ef03f01a371d8f252ac992e2d7f0471fc4.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-jackson2\1.22.0\cc014d64ae11117e159d334c99d9c246d9b36f44\google-http-client-jackson2-1.22.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6b4d58fd2ee9a40234a6e6a1a27ba8ca0a61f23e\classes.dex" />
+        sha1="cc014d64ae11117e159d334c99d9c246d9b36f44">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\google-http-client-jackson2-1.22.0_b89ee411934cd63c12f34cb95cdaf9bc31a0971c.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\211ec5448f4d52adb54ec08f8a5a178ba659b944\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client-android\1.22.0\7a0fe12b7d8189a821934d6f9d6586d00180e461\google-api-client-android-1.22.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b728bd2b8e77f0a85ae99fbdd3c9b8e675a38b50\classes.dex" />
+        sha1="7a0fe12b7d8189a821934d6f9d6586d00180e461">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\google-api-client-android-1.22.0_86e3ca4d73e9a26fdbb18a934bc29eaa8c4fbad4.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\3f7b4ecad383d60b23f410b27c37ef67be3584eb\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.1\2e66da15851f9f5b5079228f856c2f090ba98c38\gson-2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9bca49d7ca49eacea87c317787e40f2dd684f7bb\classes.dex" />
+        sha1="2e66da15851f9f5b5079228f856c2f090ba98c38">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\gson-2.1_f8626889e0388ba1163ad46ae1cb1497a635082b.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\f462b6ca962fc47ca255be575fb03407bfd33c81\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.api-client\google-api-client\1.22.0\244350c0c845c583717ade13f5666a452fd0cfa\google-api-client-1.22.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d0969b186c465a962f99f84ac0948e5998c2510f\classes.dex" />
+        sha1="0244350c0c845c583717ade13f5666a452fd0cfa">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\google-api-client-1.22.0_6f2f10ad00e69c7ef7d2a128d2cf51297471178d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.1.3\f6c3aed1cdfa21b5c1737c915186ea93a95a58bd\jackson-core-2.1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\jackson-core-2.1.3_0263871120e8f28cd8427417a189973cf6cd88ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.google.http-client\google-http-client-gson\1.22.0\826b874fa410a8135b7094c469951bf0dadb0c10\google-http-client-gson-1.22.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="826b874fa410a8135b7094c469951bf0dadb0c10">
+        <dex dex="F:\MobileApplicationDevelopment\Android\LexiWorkingApp\app\build\intermediates\pre-dexed\debug\google-http-client-gson-1.22.0_29ef14ed9830c3e9fa316ef1a17f7201e742c452.jar" />
     </item>
 
 </items>

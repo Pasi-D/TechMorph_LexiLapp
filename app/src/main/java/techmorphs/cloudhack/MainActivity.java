@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) { //goes to second activity if user is already logged in
-
+                    Intent intent = new Intent(MainActivity.this, Cam.class);
+                    startActivity(intent);
                     Log.d(TAG, "Goes to second Activity");
 
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
