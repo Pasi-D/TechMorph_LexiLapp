@@ -1,12 +1,9 @@
 package techmorphs.cloudhack;
 
-import android.os.Parcelable;
+import java.io.Serializable;
 
-/**
- * Created by Nimesha on 8/12/2017.
- */
-
-public class Item implements Parcelable {
+@SuppressWarnings("serial") //With this annotation we are going to hide compiler warnings
+public class Item implements Serializable {
     Item(int id,String name,String img,String descrp){
         this.id=id;
         this.name=name;

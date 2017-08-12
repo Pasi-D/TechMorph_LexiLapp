@@ -66,7 +66,13 @@ public class Cam extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Intent intent = new Intent(Cam.this,MainActivity.class).putExtra("ResultObj",returnedItem);
+                    Intent i = new Intent(this, Y.class);
+                    i.putExtra("returnItm", returnedItem);
+
+                    /*
+                    Intent i = getIntent();
+                    Item itm = (Item)i.getSerializableExtra("returnItm");
+                     */
                 }
 
 
