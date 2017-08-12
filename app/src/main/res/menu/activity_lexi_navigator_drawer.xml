@@ -31,9 +31,9 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
             <item
-                android:id="@+id/nav_exit"
+                android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_menu_exit"
-                android:title="Exit" />
+                android:title="Logout" />
         </menu>
     </item>
 

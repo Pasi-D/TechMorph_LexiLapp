@@ -58,7 +58,10 @@ public class LexiNavigator extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        //creating fragment object
+        Fragment fragment = null;
         getMenuInflater().inflate(R.menu.lexi_navigator, menu);
+        fragment = new about_product_frgment();
         return true;
     }
 
@@ -100,9 +103,9 @@ public class LexiNavigator extends AppCompatActivity
                 break;
             case R.id.nav_share:
                 break;
-            case R.id.nav_exit:
-                finish();
-                System.exit(0);
+            case R.id.nav_logout:
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(LexiNavigator.this, MainActivity.class));
                 break;
 
         }

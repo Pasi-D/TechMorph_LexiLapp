@@ -1,22 +1,36 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
 
     <FrameLayout
         android:id="@+id/camera_preview"
         android:layout_width="wrap_content"
-        android:layout_height="500dp">
-    </FrameLayout>
+        android:layout_height="500dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"></FrameLayout>
 
     <Button
         android:id="@+id/camera_button_rel"
-        android:layout_width="wrap_content"
-        android:layout_height="68dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:text="Capture"
-        android:visibility="visible" />
+        android:layout_width="59dp"
+        android:layout_height="61dp"
 
-</RelativeLayout>
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
