@@ -1,6 +1,7 @@
 package techmorphs.cloudhack;
 
 import android.content.Intent;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.Camera;
@@ -13,6 +14,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,10 +25,7 @@ import java.sql.Connection;
 import java.util.Map;
 
 public class Cam extends AppCompatActivity {
-
-    Connection con;
-    String un,pass,db,ip;
-
+    public static DatabaseHelper db;
     private Camera mCamera;
     private CameraPreview mPreview;
     public byte [] thePictureByteArray;
@@ -41,6 +40,36 @@ public class Cam extends AppCompatActivity {
                 // Process the image using Cloud Vision
                 Map<String, Float> annotations = CloudVisionUtils.annotateImage(imageBytes);
                 Log.d("gcp", "cloud vision annotations:" + annotations);
+
+                String[] keyWords = annotations.keySet().toArray(new String[annotations.keySet().size()]);
+                //if keyWords
+
+                //int n=DatabaseHelper.selectBestMatchingItem(keyWords);
+                Log.d("pppp",""+keyWords[0]);
+                Item returnedItem=null;
+                for (String s :keyWords){
+                    if (s.equals("soft drink")||s.equals("green")){
+                        Log.d("FINAL","sprite");
+                        returnedItem=DatabaseHelper.selectBestMatchingItem(1);
+                        break;
+                    }
+                    else if (s.equals("bottled water")||s.equals("mineral water")){
+                        Log.d("FINAL","bottleOfWater");
+                        returnedItem=DatabaseHelper.selectBestMatchingItem(2);
+                        break;
+                    }
+
+                }
+
+                if(returnedItem == null){
+                    Toast.makeText(Cam.this, "Item Not found! Please rescan",
+                            Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Intent intent = new Intent(Cam.this,MainActivity.class).putExtra("ResultObj",returnedItem);
+                }
+
+
             } catch (IOException e) {
                 Log.e("gcp", "Cloud Vison API error: ", e);
             }
@@ -53,10 +82,12 @@ public class Cam extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cam);
 
-        MyDBHandler db = new MyDBHandler(this,null,null,1);
-        db.addProduct("blah");
-        String x=db.databaseToString();
-        Log.d("mariyan",x);
+        DatabaseHelper db = new DatabaseHelper(this);
+        db.insertItem("sprite","sprite","soft drink bottle plastic product","b","Low sugar level-- No added coloring");
+        db.insertItem("null","bottled water","drinking water plastic bottle","a","Purefied water-- Natural");
+
+        //String x=db.databaseToString();
+        //Log.d("mariyan",x);
 
         // Create an instance of Camera
         mCamera = getCameraInstance();
@@ -83,6 +114,20 @@ public class Cam extends AppCompatActivity {
                     }
                 }
         );
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        releaseCamera();              // release the camera immediately on pause event
+    }
+
+
+    private void releaseCamera(){
+        if (mCamera != null){
+            mCamera.release();        // release the camera for other applications
+            mCamera = null;
+        }
     }
 
     /** A safe way to get an instance of the Camera object. */

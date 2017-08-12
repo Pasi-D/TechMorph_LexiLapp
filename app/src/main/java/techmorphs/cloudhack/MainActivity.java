@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
                 if (user != null) { //goes to second activity if user is already logged in
 
                     Log.d(TAG, "Goes to second Activity");
-
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
