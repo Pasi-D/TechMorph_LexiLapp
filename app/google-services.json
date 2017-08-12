@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "723829991433-vo514erbgg8t5pu8d7g5phj2bth87jpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techmorphs.cloudhack",
+            "certificate_hash": "eb6bbee89f7fa7f27239919bebd1b73f26ee95ce"
+          }
+        },
+        {
           "client_id": "723829991433-hff2679391bhj35cmhen57la0ht7aaur.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "723829991433-hff2679391bhj35cmhen57la0ht7aaur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

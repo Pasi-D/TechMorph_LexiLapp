@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.android\build-cache\77556c3bc274390f602d7ab2dab99073090feaa8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\pre-dexed\debug\classes_5a7890a48ca718670f43bb0a79ece2be0345a9bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.android\build-cache\f8cd0dfd3b78815cafb2925f05bc5090ae38e6eb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\pre-dexed\debug\classes_478317ca29a60ff53ce6e986c57d16d6d64c19fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.android\build-cache\6e66899ee818d41dad19d09c420d952be3fb458a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\pre-dexed\debug\classes_5fba249227c824b8e084b8166faaf5b6ba3b694b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.android\build-cache\2922440f62e26e2db3f930fe3253d225cbcc8e30\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\pre-dexed\debug\classes_f6bde211ebd618c15c5ee0c891ef23b479b81c5d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.android\build-cache\8c69990070db1cd3f26a8ffe46c6b283d1648f00\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\pre-dexed\debug\classes_dafa508eeceb1cd0d6ad3147ba87c9e0cf239966.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.android\build-cache\c1be1fe03cadaac20dc76ae40a9a206be62d473a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\pre-dexed\debug\classes_231b2595a7065b9901d7c8348f3982f630b161e6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_230dba5c3b3957c96edf54fbc0360cf0bbaf1b08\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.android\build-cache\2ca367b38bb7e4adc4e1e70d952b3719c7880522\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\pre-dexed\debug\classes_f3c226b9ec0bb07020f10c51bc68b4de081b94bb.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e3a70353d35e8c3fffc3dc3d5a9809858657ccb2">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7a5ac08f840590dbd49ad5dedde796f6d72c9ac6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Pasindu\.android\build-cache\e19d78e28e30c31369d4fbc9070f5ae0b65cf3fa\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="F:\MobileApplicationDevelopment\Android\CloudHack17\app\build\intermediates\pre-dexed\debug\classes_266da4bd6dd4524caba9676aab8c6f785bb7ea15.jar" />
+    </item>
+
+</items>
