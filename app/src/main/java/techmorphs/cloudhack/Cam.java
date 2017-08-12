@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 import android.net.Uri;
 import android.os.Environment;
+import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +19,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Map;
 
 public class Cam extends AppCompatActivity {
 
@@ -26,16 +28,19 @@ public class Cam extends AppCompatActivity {
     public byte [] thePictureByteArray;
     private Camera.PictureCallback mPicture = new Camera.PictureCallback() {
     @Override
-    public void onPictureTaken(byte[] data, Camera camera) {
-        Log.d("hello", ""+data.length);
-        thePictureByteArray =new byte[data.length];
-        for(int i=0;i<data.length;i++){
-            thePictureByteArray[i]=127;
-            Log.d("hello",""+thePictureByteArray[i]);
+    public void onPictureTaken(byte[] imageBytes, Camera camera) {
+        if (imageBytes != null) {
+            try {
+                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                StrictMode.setThreadPolicy(policy);
+
+                // Process the image using Cloud Vision
+                Map<String, Float> annotations = CloudVisionUtils.annotateImage(imageBytes);
+                Log.d("gcp", "cloud vision annotations:" + annotations);
+            } catch (IOException e) {
+                Log.e("gcp", "Cloud Vison API error: ", e);
+            }
         }
-        System.arraycopy(data,0,thePictureByteArray,0,data.length);
-       // thePictureByteArray=data;
-        Log.d("hello", "done"+thePictureByteArray[3000]);
     }
 };
 
@@ -61,14 +66,15 @@ public class Cam extends AppCompatActivity {
                         // get an image from the camera
                         mCamera.takePicture(null, null, mPicture);
                         //Log.d("hello1",""+thePictureByteArray.length);
+                        /*
                         for(int i=0;i<thePictureByteArray.length;i++){
                             Log.d("assignedFuck"," "+i+" "+thePictureByteArray[i]);
                         }
+                        */
                     }
                 }
         );
     }
-
 
     /** A safe way to get an instance of the Camera object. */
     public static Camera getCameraInstance(){
