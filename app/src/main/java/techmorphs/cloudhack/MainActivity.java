@@ -1,6 +1,8 @@
 package techmorphs.cloudhack;
 
 import android.content.Intent;
+import android.nfc.Tag;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -138,8 +140,25 @@ public class MainActivity extends AppCompatActivity {
                             Log.d(TAG, "signInWithEmail:success");
 
 
+
                             FirebaseUser user = mAuth.getCurrentUser();
                             Log.d(TAG, user.getEmail());
+
+                            Toast.makeText(MainActivity.this, "Authentication Successful.",
+                                    Toast.LENGTH_SHORT).show();
+
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+
+                                    Intent intent = new Intent(MainActivity.this, LexiNavigator.class);
+                                    startActivity(intent);
+                                }
+                            }, 3000);//delayed 3 seconds
+
+
+                            Log.d(TAG, "Loaded Navigation Drawer");
+
 
 
                         } else {
