@@ -15,14 +15,16 @@
 
     <!--Fetch Image from the global Java File-->
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/pPic"
+        android:src="@drawable/ic_user"
+        android:layout_below="@+id/nav_user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         />
 
     <TextView
-        android:id="@+id/nav_header_item_name"
+        android:id="@+id/nav_user_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"

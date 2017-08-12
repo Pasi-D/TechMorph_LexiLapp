@@ -14,6 +14,14 @@
             android:id="@+id/nav_reviews"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="User Reviews" />
+        <item
+            android:id="@+id/nav_capture"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Another Snap" />
+        <item
+            android:id="@+id/nav_addRatings"
+            android:icon="@drawable/ic_ratings"
+            android:title="Add Ratings"/>
     </group>
 
     <item android:title="Connect with us">

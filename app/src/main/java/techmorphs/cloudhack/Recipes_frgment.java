@@ -25,6 +25,6 @@ public class Recipes_frgment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
-        getActivity().setTitle("Recipes_frgment");
+        getActivity().setTitle("Recipes fragment");
     }
 }

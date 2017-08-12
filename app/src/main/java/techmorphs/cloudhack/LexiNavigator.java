@@ -1,5 +1,7 @@
 package techmorphs.cloudhack;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,9 +17,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class LexiNavigator extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +33,6 @@ public class LexiNavigator extends AppCompatActivity
         setContentView(R.layout.activity_lexi_navigator);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -69,6 +76,7 @@ public class LexiNavigator extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+
     private void displaySelectedScreen(int itemId) {
 
         //creating fragment object
@@ -86,10 +94,16 @@ public class LexiNavigator extends AppCompatActivity
             case R.id.nav_reviews:
                 fragment = new User_Reviews();
                 break;
+            case R.id.nav_capture:
+                Intent intent = new Intent(LexiNavigator.this, Cam.class);
+                startActivity(intent);
+                break;
             case R.id.nav_share:
                 break;
             case R.id.nav_exit:
-
+                finish();
+                System.exit(0);
+                break;
 
         }
 
