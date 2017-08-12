@@ -19,9 +19,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.sql.Connection;
 import java.util.Map;
 
 public class Cam extends AppCompatActivity {
+
+    Connection con;
+    String un,pass,db,ip;
 
     private Camera mCamera;
     private CameraPreview mPreview;
@@ -48,6 +52,11 @@ public class Cam extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cam);
+
+        MyDBHandler db = new MyDBHandler(this,null,null,1);
+        db.addProduct("blah");
+        String x=db.databaseToString();
+        Log.d("mariyan",x);
 
         // Create an instance of Camera
         mCamera = getCameraInstance();
