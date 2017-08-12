@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Cam"
-            android:screenOrientation="portrait">>
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
 
         </activity>
     </application>
