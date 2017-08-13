@@ -2,94 +2,58 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\5deeba6f1bdcecbd4d786137dcbfcc6cbc3de1fd\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\amarasena\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_46f554334692025299b3cbc673cc93bcb3ec139a\classes.dex" />
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\amarasena\Desktop\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_d7f0758850a3d47b536f26e0b720d723ead86b2f.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\6cc5a97a4a4e3cb8257b5828c2079a22945cafe3\output\jars\classes.jar"
+        jar="C:\Users\amarasena\Desktop\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4392c6b1068b1b0945c804ee83a26c118a9525a2\classes.dex" />
+        sha1="df36a322ba9b2620c81f736d1387a4832511a199">
+        <dex dex="C:\Users\amarasena\Desktop\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a1a114932ac7415aeeb7d6972900ae6ded82651a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\8f72c9487db7f414c9b8b1225c0a77202dbd7772\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9334bd7e4b0efd247db4388dabc39c3cd12308bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="c57a8b13e525a967c5836e4ad9eecef458819081">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_510ec008697dff77cd306679f7b3f5a026c8e22d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\2adbc61b03efaeb422b5324e2682abc341b0aba4\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="e5b429c146094a612134910688d169ec08deeefb">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2513ddf27e4b254e8b0c3816dec6a48096d788b0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\28aa5252ed24b7dddc6607141658c140d5c3f608\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9bbe88ed77cbf3e4e6e3d0469cc3d036f0448f9c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\amarasena\Desktop\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_6b4d58fd2ee9a40234a6e6a1a27ba8ca0a61f23e\classes.dex" />
+        <dex dex="C:\Users\amarasena\Desktop\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_44a5f0ad90a92ffe6bd8a3d02623b781d6bf915e\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\211ec5448f4d52adb54ec08f8a5a178ba659b944\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\amarasena\.android\build-cache\b2bd0962e4071b8223bd4efd8dc2988b1df3c968\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b728bd2b8e77f0a85ae99fbdd3c9b8e675a38b50\classes.dex" />
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="C:\Users\amarasena\Desktop\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\pre-dexed\debug\classes_3400a67e140682d8e2c93d61cb22e7da2c0bca74.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\3f7b4ecad383d60b23f410b27c37ef67be3584eb\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\amarasena\.android\build-cache\01a57b86a095b2adbf02f9499c9f9b8d5b7a9c41\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9bca49d7ca49eacea87c317787e40f2dd684f7bb\classes.dex" />
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="C:\Users\amarasena\Desktop\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\pre-dexed\debug\classes_38246fc34c0286839c2d3bbf31083270b32d67c2.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\amarasena\.android\build-cache\f462b6ca962fc47ca255be575fb03407bfd33c81\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\amarasena\.android\build-cache\d7e07b63e1b255bcb726f02877c2731363566b9b\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
-        <dex dex="C:\Users\amarasena\AndroidStudioProjects\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d0969b186c465a962f99f84ac0948e5998c2510f\classes.dex" />
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="C:\Users\amarasena\Desktop\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\pre-dexed\debug\classes_148299baa9731c9d785692f26e95baa478611a83.jar" />
     </item>
 
 </items>

@@ -3,7 +3,7 @@ package techmorphs.cloudhack;
 import java.io.Serializable;
 
 @SuppressWarnings("serial") //With this annotation we are going to hide compiler warnings
-public class Item implements Serializable {
+public class Item  {
     Item(int id,String name,String img,String descrp){
         this.id=id;
         this.name=name;

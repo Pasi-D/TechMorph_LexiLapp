@@ -123,8 +123,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static Item selectBestMatchingItem(int id){
         Item it[] = new Item[2];
-        it[0]= new Item(1,"Sprite","firebase-url","Low sugar level-- No added coloring-- No fruit contains");
-        it[1]= new Item(2,"bottled water","firebase-url","Purefied water-- Natural");
+        it[0]= new Item(1,"Sprite","https://firebasestorage.googleapis.com/v0/b/lexilapp-c54e1.appspot.com/o/18410.jpg?alt=media&token=174e2391-a5f2-4b7d-91bc-09d747a380d4","Low sugar level-- No added coloring-- No fruit contains");
+        it[1]= new Item(2,"bottled water","https://firebasestorage.googleapis.com/v0/b/lexilapp-c54e1.appspot.com/o/WaterBottle.JPG?alt=media&token=4a72911b-6315-403c-864a-1fed155db17b","Purefied water-- Natural");
         return it[id-1];
     }
 

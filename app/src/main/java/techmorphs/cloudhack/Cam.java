@@ -29,59 +29,65 @@ public class Cam extends AppCompatActivity {
     private Camera mCamera;
     private CameraPreview mPreview;
     public byte [] thePictureByteArray;
+    public static Item returnedItem=null;
     private Camera.PictureCallback mPicture = new Camera.PictureCallback() {
-    @Override
-    public void onPictureTaken(byte[] imageBytes, Camera camera) {
-        if (imageBytes != null) {
-            try {
-                StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-                StrictMode.setThreadPolicy(policy);
+        @Override
+        public void onPictureTaken(byte[] imageBytes, Camera camera) {
+            if (imageBytes != null) {
+                try {
+                    StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+                    StrictMode.setThreadPolicy(policy);
 
-                // Process the image using Cloud Vision
-                Map<String, Float> annotations = CloudVisionUtils.annotateImage(imageBytes);
-                Log.d("gcp", "cloud vision annotations:" + annotations);
+                    // Process the image using Cloud Vision
+                    Map<String, Float> annotations = CloudVisionUtils.annotateImage(imageBytes);
+                    Log.d("gcp", "cloud vision annotations:" + annotations);
 
-                String[] keyWords = annotations.keySet().toArray(new String[annotations.keySet().size()]);
-                //if keyWords
+                    String[] keyWords = annotations.keySet().toArray(new String[annotations.keySet().size()]);
+                    //if keyWords
 
-                //int n=DatabaseHelper.selectBestMatchingItem(keyWords);
-                Log.d("pppp",""+keyWords[0]);
-                Item returnedItem=null;
-                for (String s :keyWords){
-                    if (s.equals("soft drink")||s.equals("green")){
-                        Log.d("FINAL","sprite");
-                        returnedItem=DatabaseHelper.selectBestMatchingItem(1);
-                        break;
+                    //int n=DatabaseHelper.selectBestMatchingItem(keyWords);
+                    Log.d("pppp",""+keyWords[0]);
+
+                    for (String s :keyWords){
+                        if (s.equals("soft drink")||s.equals("green")){
+                            Log.d("FINAL","sprite");
+                            returnedItem=DatabaseHelper.selectBestMatchingItem(1);
+                            break;
+                        }
+                        else if (s.equals("bottled water")||s.equals("mineral water")){
+                            Log.d("FINAL","bottleOfWater");
+                            returnedItem=DatabaseHelper.selectBestMatchingItem(2);
+                            break;
+                        }
+
                     }
-                    else if (s.equals("bottled water")||s.equals("mineral water")){
-                        Log.d("FINAL","bottleOfWater");
-                        returnedItem=DatabaseHelper.selectBestMatchingItem(2);
-                        break;
+
+                    if(returnedItem == null){
+                        Toast.makeText(Cam.this, "Item Not found! Please rescan",
+                                Toast.LENGTH_SHORT).show();
                     }
-
-                }
-
-                if(returnedItem == null){
-                    Toast.makeText(Cam.this, "Item Not found! Please rescan",
-                            Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    Intent i = new Intent(this, Y.class);
-                    i.putExtra("returnItm", returnedItem);
-
+                    else{
+                        Intent intent = new Intent(Cam.this, LexiNavigation.class);
+                        startActivity(intent);
+                        /*
+                        Intent i = new Intent(Cam.this, LexiNavigation.class);
+                       // i.putExtra("returnItm", returnedItem);
+                        startActivity(i);
+*/
                     /*
                     Intent i = getIntent();
-                    Item itm = (Item)i.getSerializableExtra("returnItm");
+                    Item itm = (Item)i.getSerializableExtra("returnItm
+                    ");
                      */
+                    }
+
+
+                } catch (IOException e) {
+                    Log.e("gcp", "Cloud Vison API error: ", e);
                 }
-
-
-            } catch (IOException e) {
-                Log.e("gcp", "Cloud Vison API error: ", e);
             }
         }
-    }
-};
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,8 +116,9 @@ public class Cam extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         // get an image from the camera
+                        Log.d("hello1","1234564");
                         mCamera.takePicture(null, null, mPicture);
-                        //Log.d("hello1",""+thePictureByteArray.length);
+                        Log.d("hello1","12");
                         /*
                         for(int i=0;i<thePictureByteArray.length;i++){
                             Log.d("assignedFuck"," "+i+" "+thePictureByteArray[i]);
