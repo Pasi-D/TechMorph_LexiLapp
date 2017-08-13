@@ -6,7 +6,7 @@
     <FrameLayout
         android:id="@+id/camera_preview"
         android:layout_width="wrap_content"
-        android:layout_height="500dp">
+        android:layout_height="wrap_content">
     </FrameLayout>
 
     <Button

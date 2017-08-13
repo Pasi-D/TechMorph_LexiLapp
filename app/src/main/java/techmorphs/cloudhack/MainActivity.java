@@ -43,9 +43,12 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) { //goes to second activity if user is already logged in
 
-                    Log.d(TAG, "Goes to second Activity");
+                    Intent intent = new Intent(MainActivity.this, Cam.class);
+                    startActivity(intent);
 
+                    Log.d(TAG, "Goes to second Activity");
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
@@ -171,6 +174,27 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+
+    private Boolean exit = false;
+
+    @Override
+    public void onBackPressed() {
+        if (exit) {
+            finish(); // finish activity
+        } else {
+            Toast.makeText(this, "Press Back again to Exit.",
+                    Toast.LENGTH_SHORT).show();
+            exit = true;
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    exit = false;
+                }
+            }, 3 * 1000);
+
+        }
+
     }
 
     private boolean validateForm() {

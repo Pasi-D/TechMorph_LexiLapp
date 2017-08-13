@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TechMorph_LexiLapp.iml" filepath="$PROJECT_DIR$/TechMorph_LexiLapp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtds-1.2.5/jtds-1.2.5.iml" filepath="$PROJECT_DIR$/jtds-1.2.5/jtds-1.2.5.iml" />
     </modules>
   </component>
 </project>
