@@ -31,14 +31,13 @@ dependencies {
     compile 'com.google.api-client:google-api-client-android:1.22.0' exclude module: 'httpclient'
     compile 'com.google.http-client:google-http-client-gson:1.22.0' exclude module: 'httpclient'
 
-    compile project(':jtds-1.2.5')
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.google.apis:google-api-services-vision:v1-rev22-1.22.0'
     compile 'com.google.firebase:firebase-auth:11.0.4'
     compile 'com.google.firebase:firebase-core:11.0.4'
     compile 'com.android.support:design:26.+'
-    testCompile 'junit:junit:4.12'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    testCompile 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'

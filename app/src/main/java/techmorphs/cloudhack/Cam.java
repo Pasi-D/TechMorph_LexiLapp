@@ -1,27 +1,16 @@
 package techmorphs.cloudhack;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.hardware.Camera;
-import android.net.Uri;
-import android.os.Environment;
+import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.sql.Connection;
 import java.util.Map;
 
 public class Cam extends AppCompatActivity {
@@ -61,17 +50,19 @@ public class Cam extends AppCompatActivity {
                         }
 
                     }
-
+                    Intent i = new Intent(Cam.this, MainActivity.class);
+                    startActivity(i);
+/*
                     if(returnedItem == null){
                         Toast.makeText(Cam.this, "Item Not found! Please rescan",
                                 Toast.LENGTH_SHORT).show();
                     }
                     else{
-                        Intent intent = new Intent(Cam.this, LexiNavigation.class);
+                        Intent intent = new Intent(Cam.this, abc.class);
                         startActivity(intent);
-                        /*
-                        Intent i = new Intent(Cam.this, LexiNavigation.class);
-                       // i.putExtra("returnItm", returnedItem);
+
+
+                        i.putExtra("returnItm", returnedItem);
                         startActivity(i);
 */
                     /*
@@ -79,7 +70,7 @@ public class Cam extends AppCompatActivity {
                     Item itm = (Item)i.getSerializableExtra("returnItm
                     ");
                      */
-                    }
+
 
 
                 } catch (IOException e) {
@@ -117,7 +108,9 @@ public class Cam extends AppCompatActivity {
                     public void onClick(View v) {
                         // get an image from the camera
                         Log.d("hello1","1234564");
-                        mCamera.takePicture(null, null, mPicture);
+                        Intent i = new Intent(Cam.this, abc.class);
+                        startActivity(i);
+                        //mCamera.takePicture(null, null, mPicture);
                         Log.d("hello1","12");
                         /*
                         for(int i=0;i<thePictureByteArray.length;i++){

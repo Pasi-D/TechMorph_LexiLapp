@@ -23,11 +23,12 @@
         <activity
             android:name=".Cam"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".LexiNavigation"
             android:label="@string/title_activity_lexi_navigation"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".abc"></activity>
     </application>
 
 </manifest>

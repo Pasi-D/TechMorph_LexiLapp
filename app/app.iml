@@ -153,7 +153,6 @@
     <orderEntry type="library" exported="" name="recyclerview-v7-26.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="support-compat-26.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-26.0.0-alpha1" level="project" />
-    <orderEntry type="module" module-name="jtds-1.2.5" exported="" />
     <orderEntry type="library" exported="" name="android-android-26" level="project" />
   </component>
 </module>
