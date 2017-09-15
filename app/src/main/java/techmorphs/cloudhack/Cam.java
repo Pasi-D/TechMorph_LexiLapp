@@ -3,6 +3,7 @@ package techmorphs.cloudhack;
 import android.content.Intent;
 import android.hardware.Camera;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -110,6 +111,20 @@ public class Cam extends AppCompatActivity {
                         //startActivity(i);
                         mCamera.takePicture(null, null, mPicture);
                         Log.d("hello1","12");
+
+                        Handler mHandler = new Handler();   //this method is not good... need to switch activity after receving the json
+                        mHandler.postDelayed(new Runnable() {
+
+                            @Override
+                            public void run() {
+                                Intent intent = new Intent(Cam.this, NavNavDrawer.class);
+                                startActivity(intent);
+                            }
+
+                        }, 5000L);
+
+                        //Intent intent = new Intent(Cam.this, NavNavDrawer.class);
+                        //startActivity(intent);
                         /*
                         for(int i=0;i<thePictureByteArray.length;i++){
                             Log.d("assignedFuck"," "+i+" "+thePictureByteArray[i]);
