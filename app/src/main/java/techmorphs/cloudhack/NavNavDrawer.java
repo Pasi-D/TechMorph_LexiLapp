@@ -1,5 +1,6 @@
 package techmorphs.cloudhack;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -89,9 +90,10 @@ public class NavNavDrawer extends AppCompatActivity
         } else if (id == R.id.nav_recipes) {
             fragment = new Recipes_frgment();
         } else if (id == R.id.nav_user_reviews) {
-
+            fragment = new User_Reviews();
         } else if (id == R.id.nav_caption) {
-
+            Intent intent = new Intent(NavNavDrawer.this, Cam.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_logout) {
