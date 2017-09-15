@@ -24,7 +24,8 @@
             android:name=".Cam"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".abc" />
+        <activity android:name=".ItemActivity" />
+        <activity android:name=".SelectMethid" />
         <activity
             android:name=".NavNavDrawer"
             android:label="@string/title_activity_nav_nav_drawer"

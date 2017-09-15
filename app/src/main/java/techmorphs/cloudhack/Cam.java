@@ -1,5 +1,6 @@
 package techmorphs.cloudhack;
 
+import android.content.Intent;
 import android.hardware.Camera;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -170,7 +171,7 @@ public class Cam extends AppCompatActivity {
     }
 
     public String getPostDataString(JSONObject params) throws Exception {
-
+        //Log.d("json",""+params);
         StringBuilder result = new StringBuilder();
         boolean first = true;
 
@@ -233,12 +234,11 @@ public class Cam extends AppCompatActivity {
                     BufferedReader in = new BufferedReader(new
                             InputStreamReader(
                             conn.getInputStream()));
-
+                    Log.d("json", "" + in);
                     StringBuffer sb = new StringBuffer("");
                     String line = "";
 
                     while ((line = in.readLine()) != null) {
-
                         sb.append(line);
                         break;
                     }
@@ -257,7 +257,27 @@ public class Cam extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            //Log.d("helo");
+
+            /*
+            Intent intent = new Intent(Cam.this,ItemActivity.class);
+            startActivity(intent);
+            */
+            result = result.substring(1, result.length() - 1);
+            Log.d("gotfromserver", result);
+            String[] fromserver = result.split(",");
+            String[][] tointent = new String[fromserver.length][1];
+            for (int i = 0; i < fromserver.length; i++) {
+                String[] temp = fromserver[i].split(":");
+                tointent[i][0] = temp[1];
+                Log.d("gotfromserver", tointent[i][0]);
+            }
+
+            Intent intent = new Intent(Cam.this, ItemActivity.class);
+            Bundle mBundle = new Bundle();
+            mBundle.putSerializable("key_array_array", tointent);
+            intent.putExtras(mBundle);
+            startActivity(intent);
+
             Toast.makeText(Cam.this, result,
                     Toast.LENGTH_LONG).show();
         }
