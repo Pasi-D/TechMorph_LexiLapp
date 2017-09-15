@@ -70,9 +70,6 @@ public class Cam extends AppCompatActivity {
                     Item itm = (Item)i.getSerializableExtra("returnItm
                     ");
                      */
-
-
-
                 } catch (IOException e) {
                     Log.e("gcp", "Cloud Vison API error: ", e);
                 }
@@ -108,9 +105,9 @@ public class Cam extends AppCompatActivity {
                     public void onClick(View v) {
                         // get an image from the camera
                         Log.d("hello1","1234564");
-                        Intent i = new Intent(Cam.this, abc.class);
-                        startActivity(i);
-                        //mCamera.takePicture(null, null, mPicture);
+                        //Intent i = new Intent(Cam.this, abc.class);
+                        //startActivity(i);
+                        mCamera.takePicture(null, null, mPicture);
                         Log.d("hello1","12");
                         /*
                         for(int i=0;i<thePictureByteArray.length;i++){
