@@ -28,7 +28,11 @@
             android:name=".LexiNavigation"
             android:label="@string/title_activity_lexi_navigation"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".abc"></activity>
+        <activity android:name=".abc" />
+        <activity
+            android:name=".NavNavDrawer"
+            android:label="@string/title_activity_nav_nav_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
