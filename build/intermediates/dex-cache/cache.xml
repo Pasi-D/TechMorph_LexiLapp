@@ -2,31 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_831a75005730dfc49ebc415424fef44e3e22f7df\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\amarasena\.android\build-cache\6f5e09f91cbaabadcd72bcc3224499126fc3113a\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
-        <dex dex="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2342d3d73c1260ec254b9fbe4b6ffe77ee267181\classes.dex" />
+        <dex dex="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\pre-dexed\debug\classes_2342d3d73c1260ec254b9fbe4b6ffe77ee267181.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\commons-io\commons-io\2.4\commons-io-2.4.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="4643f23b7d8897082a2521c3fabb14e778f362b5">
-        <dex dex="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_d130b4b0d1a477081f39c43cc96f326bf9c02a63\classes.dex" />
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\pre-dexed\debug\commons-io-2.4_b2955a73e8fdec69863902c786dced8321b28c5c.jar" />
     </item>
 
 </items>
