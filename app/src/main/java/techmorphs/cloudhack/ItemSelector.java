@@ -1,16 +1,11 @@
 package techmorphs.cloudhack;
 
-import android.database.Cursor;
-
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by Oshan Wickramaratne on 2017-08-12.
  */
 
 public class ItemSelector {
-
+/*
     public int selectBestMatchingItem(String[] keyWords) {
         Map<Integer, Integer> map = new HashMap();
         String productId = null;
@@ -18,14 +13,14 @@ public class ItemSelector {
         for (int i = 1; i < keyWords.length; i++) {
             sql += " OR '" + keyWords[i] + "'";
         }
-        sql += ");"; */
+        sql += ");";
         int[] matchingProducts = getAllProductsforKeywords(keyWords);
         for (int i : matchingProducts) {
             map.put(i, 0);
         }
         for (String word : keyWords) {
             String[] wordArray = {word};
-            fillMap(getAllProductsforKeywords(wordArray), map);
+            //fillMap(getAllProductsforKeywords(wordArray), map);
 
         }
         Map.Entry maxE = null;
@@ -46,7 +41,7 @@ public class ItemSelector {
             }
         }
         sql += ");";
-
+/*
         //put code for getiing from database and processing to make a array here
         //cam.db = new DatabaseHelper(null);
         Cursor res=Cam.db.getResult(sql);
@@ -72,5 +67,5 @@ public class ItemSelector {
         for (int i : products) {
             map.put(i, ((int) map.get(i)) + 1);
         }
-    }
+    }*/
 }
