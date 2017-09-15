@@ -34,7 +34,6 @@ public class ItemSelector {
                 maxE = e;
             }
         }
-
         return (int) maxE.getKey();
     }
 

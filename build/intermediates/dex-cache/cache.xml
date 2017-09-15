@@ -2,13 +2,31 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\Pasindu\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\commons-io\commons-io\2.4\commons-io-2.4.jar"
+        jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="F:\MobileApplicationDevelopment\Android\HackX_Team_Awesome\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_41b37f00553003b59799679b2068b68ed0657758.jar" />
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\commons-io-2.4_b2955a73e8fdec69863902c786dced8321b28c5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_831a75005730dfc49ebc415424fef44e3e22f7df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f778b8ed4f9ca40d64b4a922b88c2d6bda3db515">
+        <dex dex="F:\Documents\CloudHack\Friggin WD\TechMorph_LexiLapp\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_d130b4b0d1a477081f39c43cc96f326bf9c02a63\classes.dex" />
     </item>
 
 </items>
