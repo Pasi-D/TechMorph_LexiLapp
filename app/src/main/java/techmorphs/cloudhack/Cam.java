@@ -81,11 +81,11 @@ public class Cam extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cam);
-
+/*
         DatabaseHelper db = new DatabaseHelper(this);
         db.insertItem("sprite","sprite","soft drink bottle plastic product","b","Low sugar level-- No added coloring");
         db.insertItem("null","bottled water","drinking water plastic bottle","a","Purefied water-- Natural");
-
+*/
         //String x=db.databaseToString();
         //Log.d("mariyan",x);
 
@@ -99,6 +99,7 @@ public class Cam extends AppCompatActivity {
 
         // Add a listener to the Capture button
         Button captureButton = (Button) findViewById(R.id.camera_button_rel);
+
         captureButton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
