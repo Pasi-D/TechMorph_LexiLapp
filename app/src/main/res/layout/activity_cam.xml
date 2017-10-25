@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
 
     <FrameLayout
         android:id="@+id/camera_preview"
@@ -16,7 +16,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:text="Capture"
+        android:text="@string/capture"
         android:visibility="visible" />
 
 </RelativeLayout>

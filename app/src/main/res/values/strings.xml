@@ -1,9 +1,22 @@
 <resources>
-    <string name="app_name">CloudHack</string>
+    <string name="app_name"><i>L</i>exi<i>L</i>app</string>
     <string name="title_activity_lexi_navigation">LexiNavigation</string>
+
+    <string name="capture">Scan Product</string>
+
+    <string name="signIn">Sign In</string>
+    <string name="signUp">Sign Up</string>
+
+    <string name="nav_header_uname">User Name</string>
+
+    <string name="choose_method">Choose a method</string>
+    <string name="choose_camera">Camera Scan</string>
+    <string name="choose_string">Search Product</string>
+    <string name="choose_barcode">Barcode Scan</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="title_activity_nav_nav_drawer">NavNavDrawer</string>
 </resources>

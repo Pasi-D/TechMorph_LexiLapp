@@ -10,7 +10,6 @@ import com.google.api.services.vision.v1.model.AnnotateImageRequest;
 import com.google.api.services.vision.v1.model.BatchAnnotateImagesRequest;
 import com.google.api.services.vision.v1.model.BatchAnnotateImagesResponse;
 import com.google.api.services.vision.v1.model.EntityAnnotation;
-import com.google.api.services.vision.v1.model.FaceAnnotation;
 import com.google.api.services.vision.v1.model.Feature;
 import com.google.api.services.vision.v1.model.Image;
 
@@ -22,7 +21,7 @@ import java.util.Map;
 
 public class CloudVisionUtils {
 
-    private static final String CLOUD_VISION_API_KEY = "AIzaSyCXxR_QkSk1q9B40JZvJQsqzTTL-oWyWnk";
+    private static final String CLOUD_VISION_API_KEY = "AIzaSyDtE-_hQ6SZq-tg6r6-jJrYpiZ1VUzPIgc";
     private static final Integer MAX_LABEL_RESULTS = 10;
 
 

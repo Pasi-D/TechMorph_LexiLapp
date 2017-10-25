@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "723829991433",
-    "firebase_url": "https://lexilapp-c54e1.firebaseio.com",
-    "project_id": "lexilapp-c54e1",
-    "storage_bucket": "lexilapp-c54e1.appspot.com"
+    "project_number": "315272283000",
+    "firebase_url": "https://cloudhack-68b93.firebaseio.com",
+    "project_id": "cloudhack-68b93",
+    "storage_bucket": "cloudhack-68b93.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:723829991433:android:9ab0a0a57ec5c6d9",
+        "mobilesdk_app_id": "1:315272283000:android:9ab0a0a57ec5c6d9",
         "android_client_info": {
           "package_name": "techmorphs.cloudhack"
         }
       },
       "oauth_client": [
         {
-          "client_id": "723829991433-vo514erbgg8t5pu8d7g5phj2bth87jpk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "techmorphs.cloudhack",
-            "certificate_hash": "eb6bbee89f7fa7f27239919bebd1b73f26ee95ce"
-          }
-        },
-        {
-          "client_id": "723829991433-hff2679391bhj35cmhen57la0ht7aaur.apps.googleusercontent.com",
+          "client_id": "315272283000-lq06idcdgeblljc2i1a2dbppnk1b1k6i.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBfNYGbG6dpm7YDZAOc7SEVL9BV-Fb5ZQc"
+          "current_key": "AIzaSyDtiwNUoQ373aiO9jnBKaDV1ca-WNMUmog"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "723829991433-hff2679391bhj35cmhen57la0ht7aaur.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

@@ -1,10 +1,10 @@
 package techmorphs.cloudhack;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
+    private Boolean exit = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) { //goes to second activity if user is already logged in
 
-                    Intent intent = new Intent(MainActivity.this, Cam.class);
+                    //Intent intent = new Intent(MainActivity.this, Cam.class);
+                    Intent intent = new Intent(MainActivity.this, NavNavDrawer.class);
                     startActivity(intent);
-
                     Log.d(TAG, "Goes to second Activity");
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
 
@@ -91,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
 
         createAccount(mymail, mypass);
     }
-
 
     public void createAccount(String email, String password) {
 
@@ -175,8 +175,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-
-    private Boolean exit = false;
 
     @Override
     public void onBackPressed() {
